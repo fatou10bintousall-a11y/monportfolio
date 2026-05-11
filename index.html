@@ -25,10 +25,13 @@
 
     <header id="accueil" class="hero">
         <div class="hero-content">
-            <img src="IMG_7062.jpg" alt="Fatou Bintou SALL" class="profile-img" onerror="this.src='https://via.placeholder.com/180'">
+            <img src="IMG_7062.JPG" alt="Fatou Bintou SALL" class="profile-img-medium" onerror="this.src='https://via.placeholder.com/180'">
             <h1>Fatou Bintou SALL</h1>
             <p class="subtitle">Étudiante en BUT Informatique - Parcours C (Données)</p>
-            <a href="#contact" class="btn-main">Me contacter</a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-main">Me contacter</a>
+                <a href="my_cv.pdf" target="_blank" class="btn-main">Consulter mon CV</a>
+            </div>
         </div>
     </header>
 
@@ -36,133 +39,135 @@
 
         <section id="profil" class="section">
             <h2 class="section-title">À propos de moi</h2>
-            <div class="card about-grid">
-                <div class="about-text">
-                    <p>Actuellement en première année de BUT d'informatique (parcours C - administration, gestion et exploitation des données) à l'IUT Haut de France Maubeuge.</p>
-                    <p>Je m'intéresse particulièrement à l'analyse et la structuration des données pour l'aide à la décision. Je suis à la recherche d'une alternance dès la rentrée 2027 pour devenir <strong>Data Analyst</strong>.</p>
+            <div class="about-grid">
+                
+                <div class="about-text card">
+                    <p>Depuis toujours, je suis attirée par les technologies et le fonctionnement des outils numériques. Aujourd’hui, cette curiosité m’a conduite à poursuivre mes études en première année de BUT Informatique à l’Université Polytechnique Hauts-de-France de Maubeuge.</p>
+                    
+                    <p>Avant cela, j’ai suivi une formation en électronique et réseaux au lycée Frédéric Ozanam de Lille. Ce parcours m’a permis de développer des bases techniques solides ainsi qu’une réelle capacité d’analyse et d’adaptation.</p>
+                    
+                    <p>Au fil de mes études, j’ai découvert un intérêt particulier pour le domaine de la donnée, notamment l’analyse, l’organisation et l’exploitation des informations. J’aimerais ainsi intégrer le parcours C en deuxième année afin d’approfondir mes compétences dans ce domaine et me rapprocher de mon objectif professionnel : devenir <strong>Data Analyst</strong>.</p>
+                    
+                    <p>Motivée, curieuse et investie dans ce que j’entreprends, j’aime apprendre de nouvelles choses et relever des défis à travers les projets réalisés durant ma formation. Ce portfolio me permet de présenter mon parcours, mes compétences ainsi que les différentes expériences qui construisent progressivement mon projet professionnel.</p>
                     
                     <div class="qualities">
-                        <h4>Mes Qualités</h4>
                         <span class="tag">Autonomie</span>
                         <span class="tag">Rigueur</span>
                         <span class="tag">Esprit d'équipe</span>
                         <span class="tag">Curiosité</span>
                     </div>
                 </div>
-                <div class="about-video">
-                    <h4>Vidéo de présentation</h4>
-                    <div class="video-container">
+
+                <div class="about-video-container">
+                    <div class="video-mockup">
+                        <span class="video-badge">Présentation Vidéo</span>
                         <video controls>
-                            <source src="votre-video.mp4" type="video/mp4">
+                            <source src="myvideo.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
                         </video>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <section id="competences" class="section">
-            <h2 class="section-title">Mes Compétences Techniques</h2>
+            <h2 class="section-title">Compétences Techniques</h2>
             <div class="skills-grid">
                 <div class="card skill-card">
                     <h3>🗄️ Bases de données</h3>
                     <ul>
-                        <li>Langage SQL et écriture de requêtes avancées</li>
-                        <li>Notion de stockage et gestion de données</li>
-                        <li>UML : Diagramme de classe et modélisation</li>
+                        <li>SQL (PostgreSQL) : requêtes avancées, filtres</li>
+                        <li>Gestion et stockage de données</li>
+                        <li>Modélisation UML (Diagrammes de classe)</li>
                     </ul>
                 </div>
                 <div class="card skill-card">
                     <h3>💻 Programmation</h3>
                     <ul>
-                        <li>Python (Algorithmique, Pygame, IA)</li>
-                        <li>Java & C</li>
-                        <li>Web : HTML / CSS</li>
+                        <li>Python (Algorithmique, IA Min-Max)</li>
+                        <li>Java, C, HTML/CSS</li>
+                        <li>Tests et analyse de performances</li>
                     </ul>
                 </div>
                 <div class="card skill-card">
-                    <h3>🌐 Systèmes et Réseaux</h3>
+                    <h3>🌐 Systèmes & Réseaux</h3>
                     <ul>
-                        <li>Notions de réseau (LAN, TCP/IP)</li>
-                        <li>Maintenance PC et sécurité de base</li>
-                        <li>Virtualisation (Windows/Debian)</li>
+                        <li>Réseaux LAN, TCP/IP</li>
+                        <li>Maintenance PC et Sécurité de base</li>
+                        <li>Virtualisation (Windows/Debian sous QEMU/KVM)</li>
                     </ul>
                 </div>
                 <div class="card skill-card">
                     <h3>🛠️ Outils & Logique</h3>
                     <ul>
-                        <li>IDE : Visual Studio, Eclipse, PyCharm, Thonny</li>
-                        <li>Bureautique : Google Workspace, Word, Excel</li>
-                        <li>Résolution de problèmes, dépannage et tests</li>
+                        <li>IDE : VS Code, Eclipse, PyCharm, Thonny</li>
+                        <li>Google Workspace, Word, Excel, PowerPoint</li>
+                        <li>Dépannage et résolution de problèmes</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="experiences" class="section">
-            <h2 class="section-title">Expériences Projets & SAE (Semestre 1)</h2>
+            <h2 class="section-title">Projets & SAE</h2>
             <div class="projects-grid">
-                
                 <div class="card project-card">
                     <div class="project-header">
-                        <h3>Systèmes, Réseaux & Installation</h3>
+                        <h3>Installation & Admin Système</h3>
                         <span class="sae-badge">SAE S1.03</span>
                     </div>
-                    <p><strong>Note obtenue : 19.00/20</strong></p>
-                    <p>Installation et administration de machines Windows/Debian via QEMU/KVM. Mise en place de services Apache et accès distant sécurisé (SSH).</p>
+                    <p><strong>Note : 19.00/20</strong></p>
+                    <p>Installation de machines Windows/Debian, services Apache et SSH sécurisé.</p>
                 </div>
-
                 <div class="card project-card">
                     <div class="project-header">
-                        <h3>Conception & Création de Base de Données</h3>
+                        <h3>Conception de Bases de Données</h3>
                         <span class="sae-badge">SAE S1.04</span>
                     </div>
-                    <p>Analyse et modélisation d'un système d'information (UML). Transformation en modèle relationnel, implémentation sous PostgreSQL et écriture de requêtes SQL avancées (filtres, calculs GPS).</p>
+                    <p>Modélisation UML, transformation relationnelle et implémentation PostgreSQL.</p>
                 </div>
-
                 <div class="card project-card">
                     <div class="project-header">
-                        <h3>Dév. Python, Implémentation & Algo</h3>
+                        <h3>Dév. Python & IA</h3>
                         <span class="sae-badge">SAE S1.01 & S1.02</span>
                     </div>
-                    <p>Conception d'un jeu Puissance 4 avec interface graphique (Pygame) et Intelligence Artificielle (Min-Max). Tests, analyse de performances et comparaison d'algorithmes (Tournoi noté 14/20).</p>
+                    <p>Jeu Puissance 4 avec interface Pygame et IA Min-Max. Comparaison d'algorithmes (Tournoi : 14/20).</p>
                 </div>
-
                 <div class="card project-card">
                     <div class="project-header">
-                        <h3>Web, Recueil de besoins & Économie</h3>
-                        <span class="sae-badge">SAE S1.05 & S1.06</span>
-                    </div>
-                    <p>Analyse de besoins clients, maquettage de site vitrine, travail en équipe, présentation client et création de supports numériques (CMS). Compréhension de l'environnement économique.</p>
-                </div>
-
-                <div class="card project-card">
-                    <div class="project-header">
-                        <h3>Projets Électronique & Robotique</h3>
+                        <h3>Électronique & Robotique</h3>
                         <span class="sae-badge">Projets Lycée</span>
                     </div>
-                    <p>Conception et assemblage d'une voiture robotisée intégrant moteurs, capteurs et logique de commande. Programmation d'un système de contrôle de LED avec Arduino.</p>
+                    <p>Conception d'une voiture robotisée et système Arduino.</p>
                 </div>
-
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>Web & Recueil de besoins</h3>
+                        <span class="sae-badge">SAE S1.05</span>
+                    </div>
+                    <p>Note : 14.00/20. Analyse de besoins, maquettage et présentation client.</p>
+                </div>
             </div>
         </section>
 
         <section id="parcours" class="section">
-            <h2 class="section-title">Parcours Académique</h2>
+            <h2 class="section-title">Mon Parcours</h2>
             <div class="timeline">
                 <div class="timeline-item card">
                     <span class="date">2025 - Présent</span>
                     <h3>BUT Informatique</h3>
-                    <p>IUT Haut de France, Maubeuge</p>
-                    <p><em>Semestre 1 validé avec succès (UE 1.2 à 1.6 acquises). Mention spéciale en "Outils fondamentaux" (jusqu'à 20/20).</em></p>
+                    <p>IUT Haut de France Maubeuge</p>
+                    <p><em>Semestre 1 validé - UE 1.2 à 1.6 acquises.</em></p>
                 </div>
                 <div class="timeline-item card">
                     <span class="date">2024 - 2025</span>
                     <h3>BTS Électronique et Réseau</h3>
-                    <p>Lycée Frédéric Ozanam, Lille</p>
+                    <p>Lycée Frederic Ozanam Lille</p>
                 </div>
                 <div class="timeline-item card">
                     <span class="date">2023 - 2024</span>
-                    <h3>Baccalauréat Scientifique (S)</h3>
+                    <h3>Baccalauréat Scientifique</h3>
                     <p>Lycée Seydina Limamoulaye, Sénégal</p>
                 </div>
             </div>
@@ -172,17 +177,17 @@
             <h2 class="section-title">Me contacter</h2>
             <div class="contact-grid">
                 <div class="card info-card">
-                    <p><strong>📍 Adresse :</strong> 2 rue du Dr Paul Jean, 59600 Maubeuge</p>
-                    <p><strong>📞 Téléphone :</strong> +33 7 53 18 69 17</p>
-                    <p><strong>📧 Email :</strong> <a href="mailto:fatou10bintousall@gmail.com">fatou10bintousall@gmail.com</a></p>
-                    
+                    <p>📍 2 rue du Dr Paul Jean, 59600 Maubeuge</p>
+                    <p>📞 +33 7 53 18 69 17</p>
+                    <p>📧 <a href="mailto:fatou10bintousall@gmail.com">fatou10bintousall@gmail.com</a></p>
                     <div class="socials">
-                        <h4>Retrouvez-moi sur :</h4>
-                        <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="btn-main" style="display:inline-block; margin-top:10px;">Mon profil LinkedIn</a>
+                        <h4>Liens professionnels :</h4>
+                        <a href="https://www.linkedin.com/in/fatou-bintou-sall-9722b73b9/" target="_blank" class="btn-main">LinkedIn</a>
+                        <a href="my_cv.pdf" download class="btn-cv-download">📥 Télécharger mon CV (PDF)</a>
                     </div>
                 </div>
                 <div class="card map-card">
-                    <iframe src="http://googleusercontent.com/maps.google.com/3" allowfullscreen loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40608.20308076043!2d3.9238328564177747!3d50.27837000578619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c244c000f074ef%3A0x40af13e81640a30!2s59600%20Maubeuge!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
         </section>
@@ -190,7 +195,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 - Fatou Bintou SALL. Tous droits réservés.</p>
+        <p>© 2026 - Fatou Bintou SALL. Tous droits réservés.</p>
     </footer>
 
 </body>
